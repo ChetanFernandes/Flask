@@ -1,0 +1,16 @@
+<html lang="en">
+	<head>
+		<meta name="viewport" content="initial-scale=1, width=device-width">
+		<title> Greetings </title>
+	</head>
+	<body>
+        <p><h1 style = 'color: green'>Flask is an API of Python that allows us to build up web-applications. It was developed by Armin Ronacher..</h1></p>
+		<p><h1 style = 'color: green'>Flask’s framework is more explicit than Django’s framework and is also easier to learn because it has less base code to implement a simple web-Application</h1></p>
+		<p><h1 style = 'color: blue'>A Web-Application Framework or Web Framework is the collection of modules and libraries that helps the developer to write applications without writing the low-level codes such as protocols, thread management, etc</h1></p>
+		<p><h1 style = 'color: blue'>Flask is based on WSGI(Web Server Gateway Interface) toolkit and Jinja2 template engine.</h1></p>
+        <link rel = "stylesheet" href= "{{url_for('static', filename = 'css/style.css')}}">
+        <img  src = "{{url_for('static', filename = 'img/Flask.png')}}" width="200" height="150"></script>
+        <script src = "{{url_for('static', filename = 'js/app.js') }}"></script>
+
+	</body>
+</html>

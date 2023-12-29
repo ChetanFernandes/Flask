@@ -1,0 +1,25 @@
+
+<html lang="en">
+	<head>
+		<title> Profile </title>
+	</head>
+{% block main%}
+<div class='container'>
+        <div class = "col">
+            <div class = "card">
+                <div class = "cars-body">
+                    <h4>Name - {{ user["username"] }}</h4>
+                    <h4>Email - {{ user['email'] }} </h4>
+                    <h4>Password - {{ user['password'] }} </h4>
+                    <h4>Bio - {{ user["bio"] }} </h4>
+
+                    <a href = "/sign-out">Sign-out</a>
+                
+            </div>
+        </div>
+    </div>
+  </div>
+</div>
+
+
+{%endblock%}

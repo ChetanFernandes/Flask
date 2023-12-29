@@ -1,0 +1,35 @@
+
+{% block main%}
+
+<link rel = "stylesheet" href= "{{url_for('static', filename = 'css/style.css')}}">
+<div class='container'>
+    <div class = "row">
+        <div class = "col">
+         <p><h1 style = 'color: blue'>Upload Image or file with extension .txt, .xls, .py</h1></p>
+         <hr>
+
+
+         <form action= "/upload-image"  method = "POST" enctype="multipart/form-data">
+            <div class = "form-group">
+            <label> Upload your files below </label>
+            <hr>
+
+            <div class = "custom-file">
+                <input type = "file" class = "custom-file-input" name = "image" id = "image"></input>
+                <button type = "submit" class = "btn btn-primary"> Submit </button>
+        </form>
+       
+    {% if img %}
+    <h1>Rendered Image</h1>
+    <img src= "{{img}}">
+    {% else  %}
+       {{text}}
+    {% endif %}
+    </body>
+    </html> 
+
+      </div>
+    </div>
+</div>
+
+{%endblock%}
